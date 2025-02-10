@@ -143,3 +143,4 @@ var youmax_global_options = {};
         prepareYoumax();
     };
 }( jQuery ));
+
