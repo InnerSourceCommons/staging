@@ -12,21 +12,29 @@
 
   <!-- plugins -->
   
-  <link rel="stylesheet" href="https://innersourcecommons.org/plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://staging.iscf.site/plugins/bootstrap/bootstrap.min.css">
   
-  <link rel="stylesheet" href="https://innersourcecommons.org/plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="https://staging.iscf.site/plugins/themify-icons/themify-icons.css">
   
-  <link rel="stylesheet" href="https://innersourcecommons.org/plugins/slick/slick.css">
+  <link rel="stylesheet" href="https://staging.iscf.site/plugins/slick/slick.css">
   
-  <link rel="stylesheet" href="https://innersourcecommons.org/plugins/youmax/youmax.css">
+  <link rel="stylesheet" href="https://staging.iscf.site/plugins/youmax/youmax.css">
   
-  <link rel="stylesheet" href="https://innersourcecommons.org/plugins/bootstrap-select/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="https://staging.iscf.site/plugins/bootstrap-select/css/bootstrap-select.min.css">
+  
+  <link rel="stylesheet" href="https://staging.iscf.site/css/custom-menu.css">
   
   
 
+  <!-- jQuery and Bootstrap Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
   <!-- Main Stylesheet -->
   
-  <link href="https://innersourcecommons.org/scss/style.min.css" rel="stylesheet" media="screen"/>
+  <link href="https://staging.iscf.site/scss/style.min.css" rel="stylesheet" media="screen"/>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
@@ -41,15 +49,15 @@
   
   
 	
-	<link rel="alternate" hreflang="en" href="https://innersourcecommons.org/events/community-calls/" title="English">
+	<link rel="alternate" hreflang="en" href="https://staging.iscf.site/events/community-calls/" title="English">
 	
-	<link rel="alternate" hreflang="ja" href="https://innersourcecommons.org/ja/events/" title="日本語">
+	<link rel="alternate" hreflang="ja" href="https://staging.iscf.site/ja/events/" title="日本語">
 	
-	<link rel="alternate" hreflang="pt-br" href="https://innersourcecommons.org/pt-br/events/" title="Português Brasileiro">
+	<link rel="alternate" hreflang="pt-br" href="https://staging.iscf.site/pt-br/events/" title="Português Brasileiro">
 	
   
   
-  <meta property="og:url" content="https://innersourcecommons.org/fr/events/">
+  <meta property="og:url" content="https://staging.iscf.site/fr/events/">
   <meta property="og:site_name" content="InnerSource Commons">
   <meta property="og:title" content="Évènements">
   <meta property="og:description" content="Évènements d&#39;InnerSource Commons.">
@@ -58,127 +66,801 @@
 
   
     
-    <meta property="og:image" content="https://innersourcecommons.org/images/logo.png" />
+    <meta property="og:image" content="https://staging.iscf.site/images/logo.png" />
     
+  
+
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=" crossorigin="anonymous"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '', {
+      'cookie_flags': 'SameSite=None;Secure',
+      'anonymize_ip': true,
+      'client_storage': 'none'
+    });
+  </script>
   
 
   <!-- Mastodon verification code -->
   <link href="https://fosstodon.org/@innersource" rel="me">
 
 </head><body><!-- navigation -->
-<header class="navigation">
-  <div class="container">
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-      <a class="navbar-brand"
-        href='https://innersourcecommons.org/fr'>
-        <img width="200px" class="img-fluid" src="https://innersourcecommons.org/images/logo.png"
-          alt="InnerSource Commons">
-      </a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
-        <i class="ti-menu"></i>
-      </button>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const notice = document.querySelector('.notice');
+    if (notice) {
+      document.body.classList.add('has-notice');
+    }
 
-      <div class="collapse navbar-collapse text-center" id="navigation">
-        <ul class="navbar-nav mx-auto">
-          
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link nav-with-toggle" href="https://innersourcecommons.org/fr/learn" >Apprendre</a>
-            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" data-reference="dropdown-toggle"
-              data-display="static"></a>
-            <div class="dropdown-menu">
-              
-              <a class="dropdown-item" href="https://innersourcecommons.org/fr/learn/books" >Livres</a>
-              
-              <a class="dropdown-item" href="https://innersourcecommons.org/fr/learn/learning-path" >Parcours d&#39;apprentissage</a>
-              
-              <a class="dropdown-item" href="https://innersourcecommons.org/fr/learn/patterns" >Patterns</a>
-              
-              <a class="dropdown-item" href="https://innersourcecommons.org/fr/learn/research" >Recherche</a>
-              
-              <a class="dropdown-item" href="https://www.youtube.com/@InnerSourceCommons" >Vidéos</a>
-              
-            </div>
-          </li>
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="https://innersourcecommons.org/fr/events/community-calls" >Évènements</a>
-          </li>
-          
-          
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link nav-with-toggle" href="https://innersourcecommons.org/fr/community" >Communauté</a>
-            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" data-reference="dropdown-toggle"
-              data-display="static"></a>
-            <div class="dropdown-menu">
-              
-              <a class="dropdown-item" href="https://innersourcecommons.org/fr/community/services" >Annuaire de Services</a>
-              
-            </div>
-          </li>
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="https://innersourcecommons.org/fr/stories" >Histoires</a>
-          </li>
-          
-          
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link nav-with-toggle" href="https://innersourcecommons.org/fr/about" >À Propos</a>
-            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" data-reference="dropdown-toggle"
-              data-display="static"></a>
-            <div class="dropdown-menu">
-              
-              <a class="dropdown-item" href="https://innersourcecommons.org/fr/about/announcements" >Annonces</a>
-              
-              <a class="dropdown-item" href="https://innersourcecommons.org/fr/about/board" >Conseil d&#39;Administration et de Gouvernance</a>
-              
-              <a class="dropdown-item" href="https://innersourcecommons.org/fr/about/members" >Membres</a>
-              
-              <a class="dropdown-item" href="https://innersourcecommons.org/fr/about/sponsors" >Sponsors</a>
-              
-              <a class="dropdown-item" href="https://innersourcecommons.org/fr/about/codeofconduct" >Code de Conduite</a>
-              
-              <a class="dropdown-item" href="https://innersourcecommons.org/fr/about/contact" >Nous contacter</a>
-              
-            </div>
-          </li>
-          
-          
-        </ul>
-        <a href="https://innersourcecommons.org/slack" class="btn btn-sm slack-invite-btn btn-primary ml-2" target="_blank"><i
-            class="ti-comments pr-2"></i>Rejoindre Slack</a>
+    
+    if ($.fn.selectpicker) {
+      $('.selectpicker').selectpicker({
+        style: 'btn-light',
+        size: 4
+      });
+    }
+  });
+</script>
+<header class="navigation">
+  <div class="container wrap">
+    <div class="logo">
+      <a href='https://staging.iscf.site/fr'
+        title="InnerSource Commons" style="border-bottom: 0px solid #e0e0e0;">
+        <img loading="eager" decoding="async" fetchpriority="high" width="200px" class="img-fluid"
+          src="https://staging.iscf.site/images/logo.png" alt="InnerSource Commons">
+      </a>
+    </div>
+
+    <nav class="main-menu">
+      <ul class="main-menu__wrapper">
         
-        <select id="langpicker" class="selectpicker" data-style="btn-light btn-sm ml-3" data-width="fit">
-          <option>Français</option>
-          
-          <option value="https://innersourcecommons.org/events/community-calls/">English</option>
-          
-          <option value="https://innersourcecommons.org/ja/events/">日本語</option>
-          
-          <option value="https://innersourcecommons.org/pt-br/events/">Português Brasileiro</option>
-          
-        </select>
         
+        <li class="menu-item-has-children">
+          <a href="#" style="border-bottom: 0px solid #e0e0e0;"><span>About</span></a>
+          <div class="sub-menu">
+            <div class="col-container">
+              <div class="col1">
+                <ul class="menu">
+                  <li class="menu-title">Main</li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/about" >
+                      Qui sommes-nous
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/about/board" >
+                      Conseil &amp; Gouvernance
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/about/members" >
+                      Membres
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/about/sponsors" >
+                      Sponsors
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/stories" >
+                      Histoires InnerSource
+                      
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="col2">
+                <ul class="menu">
+                  <li class="menu-title">Additional Information</li>
+                  
+                  <li class="menu-item">
+                    <a href="https://github.com/InnerSourceCommons" >
+                      GitHub
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/about/contact" >
+                      Contactez-nous
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/about/codeofconduct" >
+                      Code de Conduite
+                      
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="col3">
+                
+                <ul class="menu">
+                  <li class="menu-title">Featured Information</li>
+                </ul>
+                <div class="featured-articles">
+                  
+                  <div class="article-card">
+                    <a href="https://innersourcecommons.org/stories/microsoft/" class="article-link">
+                      <div class="article-image">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/RWCZER-Legal-IP-Trademarks-CP-MS-logo-740x417-1" alt="The Latest Case Study - Microsoft">
+                      </div>
+                      <div class="article-content">
+                        <h4>The Latest Case Study - Microsoft</h4>
+                        <p></p>
+                      </div>
+                    </a>
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        
+        
+        <li class="menu-item-has-children">
+          <a href="#" style="border-bottom: 0px solid #e0e0e0;"><span>Learning</span></a>
+          <div class="sub-menu">
+            <div class="col-container">
+              <div class="col1">
+                <ul class="menu">
+                  <li class="menu-title">Main</li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/learn/" >
+                      Apprentissage
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/learn/learning-path" >
+                      Parcours d&#39;Apprentissage
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://innersourcecommons.org/learn/books/innersource-patterns/" >
+                      InnerSource Patterns
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://innersourcecommons.org/learn/books/managing-innersource-projects/" >
+                      Gestion des Projets InnerSource
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://www.youtube.com/@InnerSourceCommons" >
+                      Vidéos
+                      
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="col2">
+                <ul class="menu">
+                  <li class="menu-title">Additional Information</li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/learn/books" >
+                      Livres
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://innersourcecommons.org/learn/books/getting-started-with-innersource/" >
+                      Débuter avec InnerSource
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://innersourcecommons.org/learn/books/understanding-the-innersource-checklist/" >
+                      Comprendre la Liste de Contrôle InnerSource
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/" >
+                      Adoption des Principes et Études de Cas InnerSource
+                      
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="col3">
+                
+                <ul class="menu">
+                  <li class="menu-title">Featured Articles</li>
+                </ul>
+                <div class="featured-articles">
+                  
+                  <div class="article-card">
+                    <a href="https://patterns.innersourcecommons.org/" class="article-link">
+                      <div class="article-image">
+                        <img src="https://2736370588-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fs9OEmdHhkmMvqlFUqXlU%2Fsocialpreview%2FzZq1AkbMAojyPa1wVtzJ%2Finnersource-patterns-book-cover-social-media-preview-gitbook.png?alt=media&amp;token=2239b9d6-b6bb-4d4f-ac7d-2c7e45dc18de" alt="InnerSource Patterns, where the collaborative magic happens">
+                      </div>
+                      <div class="article-content">
+                        <h4>InnerSource Patterns, where the collaborative magic happens</h4>
+                        <p></p>
+                      </div>
+                    </a>
+                  </div>
+                  
+                  <div class="article-card">
+                    <a href="https://innersourcecommons.gitbook.io/managing-innersource-projects/innersource-tooling/github-strategy" class="article-link">
+                      <div class="article-image">
+                        <img src="/images/photos/scm-config.png" alt="InnerSource Strategy and Configuration Management for GitHub">
+                      </div>
+                      <div class="article-content">
+                        <h4>InnerSource Strategy and Configuration Management for GitHub</h4>
+                        <p></p>
+                      </div>
+                    </a>
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        
+        
+        <li class="menu-item-has-children">
+          <a href="#" style="border-bottom: 0px solid #e0e0e0;"><span>Activities</span></a>
+          <div class="sub-menu">
+            <div class="col-container">
+              <div class="col1">
+                <ul class="menu">
+                  <li class="menu-title">Main</li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/community" >
+                      Activités
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/learn/patterns" >
+                      InnerSource Patterns Working Group
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/community/" >
+                      ISPO Working Group
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/community/" >
+                      Learning Path Working Group
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/community/" >
+                      Marketing &amp; Outreach Working Group
+                      
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="col2">
+                <ul class="menu">
+                  <li class="menu-title">Additional Information</li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/community/" >
+                      Communauté Locale
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/learn/research" >
+                      État de l&#39;Enquête InnerSource
+                      
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="col3">
+                
+                <ul class="menu">
+                  <li class="menu-title">Featured Information</li>
+                </ul>
+                <div class="featured-articles">
+                  
+                  <div class="article-card">
+                    <a href="https://www.youtube.com/watch?v=Z56LmteBSiM" class="article-link">
+                      <div class="article-image">
+                        <img src="https://img.youtube.com/vi/Z56LmteBSiM/hqdefault.jpg" alt="How the ISPO working group can help you [YouTube]">
+                      </div>
+                      <div class="article-content">
+                        <h4>How the ISPO working group can help you [YouTube]</h4>
+                        <p></p>
+                      </div>
+                    </a>
+                  </div>
+                  
+                  <div class="article-card">
+                    <a href="https://www.youtube.com/watch?v=8AnaQ7p6iLg" class="article-link">
+                      <div class="article-image">
+                        <img src="https://img.youtube.com/vi/8AnaQ7p6iLg/hqdefault.jpg" alt="State of InnerSource 2024 [YouTube]">
+                      </div>
+                      <div class="article-content">
+                        <h4>State of InnerSource 2024 [YouTube]</h4>
+                        <p></p>
+                      </div>
+                    </a>
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        
+        
+        <li class="menu-item-has-children">
+          <a href="#" style="border-bottom: 0px solid #e0e0e0;"><span>Community</span></a>
+          <div class="sub-menu">
+            <div class="col-container">
+              <div class="col1">
+                <ul class="menu">
+                  <li class="menu-title">Main</li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/events/community-calls" >
+                      Appels Communautaires
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://gatherings.innersourcecommons.org/" >
+                      Rassemblements InnerSource - Chapitres Locaux
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/events/isc-2024" >
+                      Sommet InnerSource 2024
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://innersourcecommons.org/events/past-summits/" >
+                      Sommets Précédents
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/community/services" >
+                      Répertoire des Services
+                      
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="col2">
+                <ul class="menu">
+                  <li class="menu-title">Additional Information</li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/about/map" >
+                      Carte des InnerSourcers
+                      
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="col3">
+                
+                <ul class="menu">
+                  <li class="menu-title">Featured Activity</li>
+                </ul>
+                <div class="featured-articles">
+                  
+                  
+                  
+                  <div class="article-card">
+                    <a href="https://bit.ly/ISCFeb18" class="article-link" target="_blank">
+                      <div class="article-image">
+                        <img src="/images/events/meetup-2025-02-18.png" alt="Project Fleming - An Open Source Discovery Tool">
+                      </div>
+                      <div class="article-content">
+                        <h4>Project Fleming - An Open Source Discovery Tool will be held on February 18, 2025</h4>
+                      </div>
+                    </a>
+                  </div>
+                  
+                  
+                  <div class="article-card">
+                    <a href="https://gatherings.innersourcecommons.org/berlin-2025/" class="article-link">
+                      <div class="article-image">
+                        <img src="/images/photos/berlin-2025.png" alt="InnerSource Gathering Berlin 2025 is open for registration!">
+                      </div>
+                      <div class="article-content">
+                        <h4>InnerSource Gathering Berlin 2025 is open for registration!</h4>
+                      </div>
+                    </a>
+                  </div>
+                  
+                  <div class="article-card">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjeQFYDVT_0pVwMJTHTmArMPLtq7oHwBO8CgQzd_aV0UxRKA/viewform" class="article-link">
+                      <div class="article-image">
+                        <img src="/images/photos/call-for-hosts.png" alt="Call for Hosts for InnerSource Summit 2025">
+                      </div>
+                      <div class="article-content">
+                        <h4>Call for Hosts for InnerSource Summit 2025</h4>
+                      </div>
+                    </a>
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        
+        
+        <li class="menu-item-has-children">
+          <a href="#" style="border-bottom: 0px solid #e0e0e0;"><span>Blog &amp; News</span></a>
+          <div class="sub-menu">
+            <div class="col-container">
+              <div class="col1">
+                <ul class="menu">
+                  <li class="menu-title">Main</li>
+                  
+                  <li class="menu-item">
+                    <a href="https://staging.iscf.site/about/announcements" >
+                      Annonces
+                      
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="https://us1.campaign-archive.com/home/?u=0363fb06e6a59d48c6e260f1b&amp;id=97224b5ff2" >
+                      Newsletters Précédentes
+                      
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="col2">
+                <ul class="menu">
+                  <li class="menu-title">Additional Information</li>
+                  
+                </ul>
+              </div>
+              <div class="col3">
+                
+                <ul class="menu">
+                  <li class="menu-title">Featured Articles</li>
+                </ul>
+                <div class="featured-articles">
+                  
+                  <div class="article-card">
+                    <a href="/about/announcements/2024-05-new-board-and-officers" class="article-link">
+                      <div class="article-image">
+                        <img src="/images/about/announcements/2024-05-new-board-and-officers.png" alt="InnerSource Commons welcomes our new Board and Officers">
+                      </div>
+                      <div class="article-content">
+                        <h4>InnerSource Commons welcomes our new Board and Officers</h4>
+                      </div>
+                    </a>
+                  </div>
+                  
+                  <div class="article-card">
+                    <a href="/about/announcements/2024-04-new-members" class="article-link">
+                      <div class="article-image">
+                        <img src="/images/about/announcements/2024-04-new-members-announcement.png" alt="New Members Appointed to the InnerSource Commons Foundation">
+                      </div>
+                      <div class="article-content">
+                        <h4>New Members Appointed to the InnerSource Commons Foundation</h4>
+                      </div>
+                    </a>
+                  </div>
+                  
+                  <div class="article-card">
+                    <a href="/about/announcements/2023-08-new-executive-director" class="article-link">
+                      <div class="article-image">
+                        <img src="/images/about/announcements/2023-08-new-executive-director-announcement.png" alt="Russell Rutledge appointed as new Executive Director of InnerSource Commons">
+                      </div>
+                      <div class="article-content">
+                        <h4>Russell Rutledge appointed as new Executive Director of InnerSource Commons</h4>
+                      </div>
+                    </a>
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        
+        
+        
+<li class="menu-item-has-children" id="schedule-menu-item">
+  <a href="#" style="border-bottom: 0px solid #e0e0e0;"><span>Schedule</span></a>
+  <div class="sub-menu" style="padding:0px;margin:0px;">
+    <div style="width:100%;margin:0px;padding:0px;" id="calendar-container">
+      <div id="calendar-placeholder">
+        <div id="calendar-loading" style="text-align:center;padding:40px;color:#666;opacity:0;transition:opacity 0.3s ease-in-out;">
+          <i class="ti-reload" style="animation: spin 2s linear infinite;display:block;font-size:24px;margin-bottom:10px;"></i>
+          <span>Loading...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+<script>
+let calendarLoaded = false;
+
+function loadCalendar() {
+  if (calendarLoaded) return;
+  
+  const calendarContainer = document.getElementById('calendar-container');
+  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const iframe = document.createElement('iframe');
+  iframe.style.border = '0';
+  iframe.style.width = '100%';
+  iframe.style.minHeight = '500px';
+  iframe.style.margin = '0px';
+  iframe.frameBorder = '0';
+  iframe.scrolling = 'no';
+  iframe.style.opacity = '0';
+  iframe.style.transition = 'opacity 0.3s ease-in-out';
+  
+  const loadingElement = document.getElementById('calendar-loading');
+  if (loadingElement) {
+    loadingElement.style.display = 'block';
+    setTimeout(() => {
+      loadingElement.style.opacity = '1';
+    }, 50);
+  }
+
+  iframe.onload = function() {
+    if (loadingElement) {
+      loadingElement.style.opacity = '0';
+      setTimeout(() => {
+        loadingElement.style.display = 'none';
+        iframe.style.opacity = '1';
+      }, 300);
+    }
+  };
+
+  iframe.src = `https://calendar.google.com/calendar/embed?src=c_62694f414055ac569e5cb12dafbb0890ca22f3640b177a4b10b53171fbc9bdd4%40group.calendar.google.com&ctz=${timezone}`;
+  
+  calendarContainer.appendChild(iframe);
+  calendarLoaded = true;
+}
+
+const menuItem = document.getElementById('schedule-menu-item');
+if (menuItem) {
+  menuItem.addEventListener('mouseenter', loadCalendar);
+  
+  const menuLink = menuItem.querySelector('a');
+  if (menuLink) {
+    menuLink.addEventListener('click', function(e) {
+      if (window.innerWidth <= 991) {
+        loadCalendar();
+      }
+    });
+  }
+}
+</script>
+ 
+        
+        
+      </ul>
+
+      <div class="header-cta">
+        <div class="language-selector">
+          <select class="form-control" id="language-selector">
+            <option value="" selected disabled>Français</option>
+            
+              
+              <option value="https://staging.iscf.site/events/community-calls/">English</option>
+              
+              <option value="https://staging.iscf.site/ja/events/">日本語</option>
+              
+              <option value="https://staging.iscf.site/pt-br/events/">Português Brasileiro</option>
+              
+            
+          </select>
+        </div>
+        <a href="https://staging.iscf.site/slack" class="btn btn-primary" target="_blank">
+          <i class="ti-comments pr-2"></i>Rejoindre Slack
+        </a>
       </div>
     </nav>
+
+    <button class="hamburger" type="button" aria-label="Toggle Menu">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
   </div>
 </header>
+
+<style>
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.language-selector {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.language-selector select {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  min-width: 120px;
+}
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.main-menu__wrapper');
+    const subMenuParents = document.querySelectorAll('.menu-item-has-children > a');
+    const isMobile = window.innerWidth <= 992;
+
+    
+    const languageSelector = document.getElementById('language-selector');
+    if (languageSelector) {
+      languageSelector.addEventListener('change', function() {
+        const selectedUrl = this.value;
+        if (selectedUrl) {
+          window.location.href = selectedUrl;
+        }
+      });
+    }
+
+    const calendarContainer = document.getElementById('calendar-container');
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.addedNodes.length > 0) {
+          const loadingElement = document.getElementById('calendar-loading');
+          if (loadingElement) {
+            loadingElement.style.transition = 'opacity 0.5s ease-out';
+            loadingElement.style.opacity = '1';
+            
+            setTimeout(() => {
+              loadingElement.style.opacity = '0';
+              setTimeout(() => {
+                loadingElement.style.display = 'none';
+              }, 500);
+            }, 2000);
+          }
+        }
+      });
+    });
+
+    if (calendarContainer) {
+      observer.observe(calendarContainer, { childList: true, subtree: true });
+    }
+
+    
+    hamburger.addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+
+    
+    if (isMobile) {
+      subMenuParents.forEach(item => {
+        item.addEventListener('click', function (e) {
+          e.preventDefault();
+          const parent = this.parentElement;
+          const subMenu = this.nextElementSibling;
+
+          
+          subMenuParents.forEach(otherItem => {
+            if (otherItem !== this) {
+              otherItem.parentElement.classList.remove('is-active');
+              otherItem.nextElementSibling.classList.remove('is-active');
+            }
+          });
+
+          
+          parent.classList.toggle('is-active');
+          subMenu.classList.toggle('is-active');
+        });
+      });
+    }
+
+    
+    window.addEventListener('resize', function () {
+      const isNowMobile = window.innerWidth <= 992;
+      if (isNowMobile !== isMobile) {
+        location.reload();
+      }
+    });
+  });
+</script>
+
 <!-- /navigation -->
 
 
 
-<section class="notice bg-light">
+<section class='notice bg-light'>
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-12 text-center">Does your organization want to host InnerSource Summit 2025? Click  <a href="https://bit.ly/4fchanz" class="btn-link ml-1" target="_blank">here</a> to apply or contact us at <a href="mailto:info@innersourcecommons.org" class="btn-link ml-1" target="_blank">info@innersourcecommons.org</a> to find out more
-      </div>
+      <div class="col-md-12">
+        
+        Does your organization want to host InnerSource Summit 2025? Click <a href="https://bit.ly/4fchanz">here</a> to apply or contact us at <a href="mailto:info@innersourcecommons.org">info@innersourcecommons.org</a> to find out more
+        
+    </div>
+  </div>
+</section>
+
+
+
+<section class='notice bg-primary text-light'>
+  <div class="container">
+      <div class="col-md-12">
+        
+        Join us on Tuesday, February 18th, 9am GMT / 10am CET / 2:30pm IST / 8pm AEDT, when Dr. Christian DeFeo and Ben Butcher, from Shell, will discuss <a href="https://bit.ly/ISCFeb18">Project Fleming: An Open Source Discovery Tool</a>
+        
     </div>
   </div>
 </section>
@@ -187,23 +869,10 @@
 
 
 
-<section class="notice bg-primary text-light">
-</section>
-
-<section class="notice bg-light">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-12 text-center">Join us on Tuesday, February 18th, 9am GMT / 10am CET / 2:30pm IST / 8pm AEDT, when Dr. Christian DeFeo and Ben Butcher, from Shell, will discuss <a href="https://bit.ly/ISCFeb18" class="btn-link ml-1" target="_blank"> Project Fleming: An Open Source Discovery Tool.
-            <i class="ti-arrow-right"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
-
-<div class="container">
+<div class="container" style="padding: 0px;">
 
 <ol class="breadcrumb">
   
@@ -212,7 +881,7 @@
 
 <li class="breadcrumb-item">
   
-  <a href="https://innersourcecommons.org/fr/">InnerSource Commons</a>
+  <a href="https://staging.iscf.site/fr/">InnerSource Commons</a>
   
 </li>
 
@@ -227,14 +896,12 @@
 
 
 </div>
-<section class="section pb-0 section-first">
-  <div class="container text-center">
+  <div class="container">
     <h1 class="display-3">Évènements</h1>
     
     <p>Évènements d&rsquo;InnerSource Commons.</p>
     
   </div>
-</section>
 
 
 
@@ -247,7 +914,7 @@
         <div class="row align-items-center">
           <div class="col-md-6 mb-4 mb-md-0">
             <a href="https://bit.ly/ISCFeb18">
-              <img src="https://innersourcecommons.org/images/events/meetup-2025-02-18.png" alt="Project Fleming - An Open Source Discovery Tool" class="img-fluid rounded-lg w-100">
+              <img src="https://staging.iscf.site/images/events/meetup-2025-02-18.png" alt="Project Fleming - An Open Source Discovery Tool" class="img-fluid rounded-lg w-100">
             </a>
           </div>
           <div class="col-md-6">
@@ -266,7 +933,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCFebUS">
-              <img src="https://innersourcecommons.org/images/events/meetup-2025-02-04.png" alt="The 10 Dysfunctions of a Company Culture" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2025-02-04.png" alt="The 10 Dysfunctions of a Company Culture" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -284,7 +951,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISC21125">
-              <img src="https://innersourcecommons.org/images/events/meetup-2025-01-21.png" alt="Engineering Corporate Communities - approach, results, and perspectives" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2025-01-21.png" alt="Engineering Corporate Communities - approach, results, and perspectives" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -304,7 +971,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCJan25">
-              <img src="https://innersourcecommons.org/images/events/meetup-2025-01-14.png" alt="Ways DevRel skills could save your internal contributor community" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2025-01-14.png" alt="Ways DevRel skills could save your internal contributor community" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -324,7 +991,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCDec10">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-12-12.png" alt="Tax Compliance for Collaborative Software Engineering - Microsoft’s 30 Billion Dollar Problem" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-12-12.png" alt="Tax Compliance for Collaborative Software Engineering - Microsoft’s 30 Billion Dollar Problem" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -344,7 +1011,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCDec03">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-12-03.png" alt="InnerSource Hackathon - Fun and safe approach to get started" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-12-03.png" alt="InnerSource Hackathon - Fun and safe approach to get started" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -363,15 +1030,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-2024/">
-              <img src="https://innersourcecommons.org/images/events/summit-2024.png" alt="InnerSource Summit 2024" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-2024/">
+              <img src="https://staging.iscf.site/images/events/summit-2024.png" alt="InnerSource Summit 2024" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-2024/" class="post-title">InnerSource Summit 2024</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-2024/" class="post-title">InnerSource Summit 2024</a></h3>
             <p class="card-text event-card-text">Register Speakers Sponsor Contact Us Registrations are Now Open 20th &amp; 21st November 2024 - online Join us at the world&rsquo;s leading gathering of InnerSource practitioners.</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-2024/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-2024/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
             </div>
           </div>
@@ -382,7 +1049,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCOct22">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-10-22.png" alt="Building Sustainable Internal Developer Platforms with InnerSource" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-10-22.png" alt="Building Sustainable Internal Developer Platforms with InnerSource" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -402,7 +1069,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCOct08">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-10-08.png" alt="Promoting InnerSource Practices with an Internal Developer Platform" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-10-08.png" alt="Promoting InnerSource Practices with an Internal Developer Platform" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -422,7 +1089,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISC1Oct">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-10-01.png" alt="Getting Started with InnerSource Consultations" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-10-01.png" alt="Getting Started with InnerSource Consultations" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -442,7 +1109,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISC10sep">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-09-17.png" alt="InnerSource as one step towards Open Source" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-09-17.png" alt="InnerSource as one step towards Open Source" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -462,7 +1129,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ABCISC">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-08-13.png" alt="The A,B,Cs of InnerSource" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-08-13.png" alt="The A,B,Cs of InnerSource" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -482,7 +1149,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/AMAAM">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-06-20.png" alt="InnerSource Commons AMA (Ask Me Anything)" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-06-20.png" alt="InnerSource Commons AMA (Ask Me Anything)" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -500,7 +1167,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/AMAAPAC">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-06-11.png" alt="InnerSource Commons AMA (Ask Me Anything)" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-06-11.png" alt="InnerSource Commons AMA (Ask Me Anything)" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -518,7 +1185,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/SoIS24">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-05-23.png" alt="State of InnerSource 2024" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-05-23.png" alt="State of InnerSource 2024" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -538,7 +1205,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/4bgTBbG">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-05-21a.png" alt="Insightful Learning - InnerSource Dojo Way" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-05-21a.png" alt="Insightful Learning - InnerSource Dojo Way" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -558,7 +1225,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/49kzSGB">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-04-30.png" alt="Mastering Open Source - Balancing the Code Supply Chain, IP, and Legal Considerations" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-04-30.png" alt="Mastering Open Source - Balancing the Code Supply Chain, IP, and Legal Considerations" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -578,7 +1245,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCMLOps">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-04-18.png" alt="Transforming MLOps Culture with InnerSource Principles" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-04-18.png" alt="Transforming MLOps Culture with InnerSource Principles" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -598,7 +1265,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/49WF1FT">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-03-26.png" alt="Defending the Sports Metaphor - An InnerSource Primer" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-03-26.png" alt="Defending the Sports Metaphor - An InnerSource Primer" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -618,7 +1285,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/3ThQ1I7">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-03-19.png" alt="Untangling InnerSource - Weaving Collaboration into the Fabric of Your Organisation" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-03-19.png" alt="Untangling InnerSource - Weaving Collaboration into the Fabric of Your Organisation" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -638,7 +1305,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCSAP">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-02-27.png" alt="Cross-Product Architecture - Lessons Learned from Applying Conway’s Law" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-02-27.png" alt="Cross-Product Architecture - Lessons Learned from Applying Conway’s Law" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -658,7 +1325,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/APIs">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-2-20.png" alt="InnerSource and APIs" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-2-20.png" alt="InnerSource and APIs" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -678,7 +1345,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/3RUdXj6">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-01-30.png" alt="Managing InnerSource Projects" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-01-30.png" alt="Managing InnerSource Projects" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -698,7 +1365,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/41tzmEd">
-              <img src="https://innersourcecommons.org/images/events/meetup-2024-01-23.png" alt="Effective InnerSource; Strategies for Resource-Constrained Teams" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2024-01-23.png" alt="Effective InnerSource; Strategies for Resource-Constrained Teams" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -718,7 +1385,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCEoY23">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-12-12.png" alt="InnerSource Commons End of Year Call" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-12-12.png" alt="InnerSource Commons End of Year Call" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -738,7 +1405,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/479aOST">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-12-05.png" alt="Building an InnerSource Culture of Trust on the Path to Open Source" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-12-05.png" alt="Building an InnerSource Culture of Trust on the Path to Open Source" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -757,15 +1424,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-2023/">
-              <img src="https://innersourcecommons.org/images/events/Summit2023.jpg" alt="InnerSource Summit 2023" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-2023/">
+              <img src="https://staging.iscf.site/images/events/Summit2023.jpg" alt="InnerSource Summit 2023" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-2023/" class="post-title">InnerSource Summit 2023</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-2023/" class="post-title">InnerSource Summit 2023</a></h3>
             <p class="card-text event-card-text">Registrations are Now Open 15th &amp; 16th November 2023 - online Join us at the world&rsquo;s leading gathering of InnerSource practitioners.</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-2023/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-2023/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
             </div>
           </div>
@@ -776,7 +1443,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/3RDPTm1">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-10-25.jpg" alt="Getting Ready for State of InnerSource 2024" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-10-25.jpg" alt="Getting Ready for State of InnerSource 2024" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -794,7 +1461,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/45WOJq2">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-10-10.jpg" alt="Leveraging Special Interest Groups to expand your enterprise InnerSource initiative" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-10-10.jpg" alt="Leveraging Special Interest Groups to expand your enterprise InnerSource initiative" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -814,7 +1481,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/44QcoYE">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-09-19.jpg" alt="Starting with a Blank Slate - Building Your InnerSource Program From the Ground Up" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-09-19.jpg" alt="Starting with a Blank Slate - Building Your InnerSource Program From the Ground Up" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -834,7 +1501,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/3Kgfq0c">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-09-13.jpg" alt="Improving Engineering Collaboration across the Singapore Government through Innersource" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-09-13.jpg" alt="Improving Engineering Collaboration across the Singapore Government through Innersource" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -854,7 +1521,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/3JIvR5d">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-07-06.jpg" alt="How InnerSource enabled the creation of watsonx.ai" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-07-06.jpg" alt="How InnerSource enabled the creation of watsonx.ai" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -874,7 +1541,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/3qLLnGB">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-07-05.jpg" alt="How the Process Management Standards for Open Source Compliance and Security Impact InnerSource" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-07-05.jpg" alt="How the Process Management Standards for Open Source Compliance and Security Impact InnerSource" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -894,7 +1561,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/3N1TAPz">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-06-28.jpg" alt="Cultural crosswires - how to communicate effectively and still be misunderstood" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-06-28.jpg" alt="Cultural crosswires - how to communicate effectively and still be misunderstood" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -914,7 +1581,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/3AKCO0F">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-05-31.jpg" alt="Beyond Operational Planning Advocating the Strategic Value of an ISPO" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-05-31.jpg" alt="Beyond Operational Planning Advocating the Strategic Value of an ISPO" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -934,7 +1601,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/42mxLPA">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-05-23.jpg" alt="Understanding Conflict" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-05-23.jpg" alt="Understanding Conflict" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -954,7 +1621,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="http://bit.ly/3zozM1o">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-04-26.jpg" alt="Running an OSPO the Open Source / InnerSource way" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-04-26.jpg" alt="Running an OSPO the Open Source / InnerSource way" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -974,7 +1641,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="http://bit.ly/43nIIBM">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-04-25b.jpg" alt="State of InnerSource 2023" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-04-25b.jpg" alt="State of InnerSource 2023" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -992,7 +1659,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="http://bit.ly/3mAjyPl">
-              <img src="https://innersourcecommons.org/images/events/Meetup-2023-03-21.jpg" alt="Using Backstage as an InnerSource Portal" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/Meetup-2023-03-21.jpg" alt="Using Backstage as an InnerSource Portal" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1012,7 +1679,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="http://bit.ly/3XIzmwr">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-03-09.jpg" alt="Trouver les arguments pour l’InnerSource" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-03-09.jpg" alt="Trouver les arguments pour l’InnerSource" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1030,7 +1697,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="http://bit.ly/3YZdyxx">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-03-08.jpg" alt="Implementing InnerSource Metrics" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-03-08.jpg" alt="Implementing InnerSource Metrics" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1050,7 +1717,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="http://bit.ly/4076IaR">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-02-28.jpg" alt="Spelling InnerSource - a history" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-02-28.jpg" alt="Spelling InnerSource - a history" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1070,7 +1737,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/3w9LviE">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-02-08.jpg" alt="Building the Case for InnerSource" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-02-08.jpg" alt="Building the Case for InnerSource" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1090,7 +1757,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCDMaS">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-01-18.png" alt="Decision Making at Scale for InnerSource" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-01-18.png" alt="Decision Making at Scale for InnerSource" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1110,7 +1777,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCSBOM">
-              <img src="https://innersourcecommons.org/images/events/meetup-2023-01-10.png" alt="Applying OpenChain and SBOMs for InnerSource" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2023-01-10.png" alt="Applying OpenChain and SBOMs for InnerSource" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1130,7 +1797,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCEoY22">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-12-14.png" alt="ISC End of Year community call" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-12-14.png" alt="ISC End of Year community call" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1148,7 +1815,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISPOWG">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-12-06.png" alt="An ISPO Working Group for the ISC" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-12-06.png" alt="An ISPO Working Group for the ISC" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1167,15 +1834,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-2022/">
-              <img src="https://innersourcecommons.org/images/events/isc-2022.jpg" alt="InnerSource Summit 2022" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-2022/">
+              <img src="https://staging.iscf.site/images/events/isc-2022.jpg" alt="InnerSource Summit 2022" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-2022/" class="post-title">InnerSource Summit 2022</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-2022/" class="post-title">InnerSource Summit 2022</a></h3>
             <p class="card-text event-card-text">Registrations are Now Open 16th &amp; 17th November 2022 - online Join us at the world&rsquo;s leading gathering of InnerSource practitioners.</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-2022/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-2022/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
                 <a href="https://www.youtube.com/playlist?list=PLCH-i0B0otNTatSqMV51Xd_wJsqwcZ4HT" target="_blank" class="btn btn-secondary btn-sm mt-sm-1 mt-md-0">Watch Recording</a>
               
@@ -1188,7 +1855,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCHOR2">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-11-08.png" alt="InnerSource Commons Halloween Spook-tacular" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-11-08.png" alt="InnerSource Commons Halloween Spook-tacular" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1206,7 +1873,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCHor">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-10-26.jpg" alt="InnerSource Commons Halloween Spook-tacular" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-10-26.jpg" alt="InnerSource Commons Halloween Spook-tacular" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1224,7 +1891,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCCUL">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-10-04.png" alt="How to Create an InnerSource Culture" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-10-04.png" alt="How to Create an InnerSource Culture" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1244,7 +1911,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCC2OS">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-09-21.png" alt="InnerSource to Open Source" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-09-21.png" alt="InnerSource to Open Source" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1264,7 +1931,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://www.eventbrite.com/e/innersource-commons-gathering-sep-2022-dublin-tickets-370546573777">
-              <img src="https://innersourcecommons.org/images/events/gathering-2022-09.png" alt="InnerSource Commons Gathering" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/gathering-2022-09.png" alt="InnerSource Commons Gathering" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1282,7 +1949,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCOSPO">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-09-05.png" alt="Demystifying OSPOs" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-09-05.png" alt="Demystifying OSPOs" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1302,7 +1969,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/3ca0kLa">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-08-16.jpg" alt="InnerSource Catchup" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-08-16.jpg" alt="InnerSource Catchup" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1320,7 +1987,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/IScatchup">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-07-13.jpg" alt="InnerSource Catchup" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-07-13.jpg" alt="InnerSource Catchup" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1338,7 +2005,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/FINOSI">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-06-21.jpg" alt="FINOS InnerSource Panel" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-06-21.jpg" alt="FINOS InnerSource Panel" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1356,7 +2023,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCChng">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-06-08.png" alt="InnerSource Culture Change" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-06-08.png" alt="InnerSource Culture Change" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1376,7 +2043,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCIncent">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-05-24.png" alt="Incentivizing Culture Change" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-05-24.png" alt="Incentivizing Culture Change" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1396,7 +2063,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/RoleMM">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-05-11.png" alt="The Role of Middle Management" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-05-11.png" alt="The Role of Middle Management" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1416,7 +2083,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/CC26Apr">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-04-26.png" alt="Creating Platforms with InnerSource" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-04-26.png" alt="Creating Platforms with InnerSource" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1436,7 +2103,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/cc13apr">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-04-13.png" alt="State of InnerSource" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-04-13.png" alt="State of InnerSource" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1456,7 +2123,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/ISCmar29">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-03-29.jpg" alt="Community Building in the context of InnerSource" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-03-29.jpg" alt="Community Building in the context of InnerSource" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1476,7 +2143,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://www.eventbrite.com/e/288581594317">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-03-16.jpg" alt="Transfer Pricing for InnerSource Projects" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-03-16.jpg" alt="Transfer Pricing for InnerSource Projects" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1496,7 +2163,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://www.eventbrite.com/e/265132246687">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-02-22.jpg" alt="InnerSource Security" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-02-22.jpg" alt="InnerSource Security" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1516,7 +2183,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/isc_cc_2">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-02-02.jpeg" alt="InnerSource ROI &amp; People Strategies" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-02-02.jpeg" alt="InnerSource ROI &amp; People Strategies" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1536,7 +2203,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://bit.ly/3pYvgRX">
-              <img src="https://innersourcecommons.org/images/events/meetup-2022-01-18.jpg" alt="InnerSource Programs &amp; People Strategies" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2022-01-18.jpg" alt="InnerSource Programs &amp; People Strategies" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1556,7 +2223,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://www.eventbrite.com/e/innersource-commons-community-call-year-end-call-tickets-219165268217">
-              <img src="https://innersourcecommons.org/images/events/meetup-2021-12-14.jpg" alt="2021 Year End Call" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2021-12-14.jpg" alt="2021 Year End Call" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1573,15 +2240,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-2021/">
-              <img src="https://innersourcecommons.org/images/events/Summit2021.JPG" alt="InnerSource Summit 2021" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-2021/">
+              <img src="https://staging.iscf.site/images/events/Summit2021.JPG" alt="InnerSource Summit 2021" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-2021/" class="post-title">InnerSource Summit 2021</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-2021/" class="post-title">InnerSource Summit 2021</a></h3>
             <p class="card-text event-card-text">17th and 18th November 2021, online Get your ticket now! Join us at the world&rsquo;s largest InnerSource Conference!</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-2021/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-2021/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
                 <a href="https://www.youtube.com/watch?v=18vOADg8mwg&amp;list=PLCH-i0B0otNQ5iQwe_g2As85qsAW4VZjz" target="_blank" class="btn btn-secondary btn-sm mt-sm-1 mt-md-0">Watch Recording</a>
               
@@ -1594,7 +2261,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://www.eventbrite.com/e/innersource-commons-strategies-for-kick-starting-innersource-tickets-184945435777">
-              <img src="https://innersourcecommons.org/images/events/meetup-2021-10-20.jpg" alt="Strategies for Kick-starting InnerSource" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2021-10-20.jpg" alt="Strategies for Kick-starting InnerSource" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1614,7 +2281,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://www.eventbrite.com/e/innersource-community-call-innersource-patterns-tickets-175369804807">
-              <img src="https://innersourcecommons.org/images/events/meetup-2021-10-05.jpg" alt="InnerSource Patterns" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2021-10-05.jpg" alt="InnerSource Patterns" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1634,7 +2301,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://www.eventbrite.com/e/innersource-community-call-innersource-in-the-enterprise-tickets-168955178487?aff=erelpanelorg">
-              <img src="https://innersourcecommons.org/images/events/meetup-2021-09-21.jpg" alt="InnerSource in the Enterprise" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2021-09-21.jpg" alt="InnerSource in the Enterprise" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1654,7 +2321,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://www.eventbrite.com/e/innersource-commons-community-call-innersource-in-action-tickets-161634092923?aff=ebdsoporgprofile">
-              <img src="https://innersourcecommons.org/images/events/meetup-2021-09-07.jpg" alt="InnerSource in Action" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2021-09-07.jpg" alt="InnerSource in Action" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1674,7 +2341,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://www.eventbrite.com/e/innersource-commons-community-call-innersource-discoverability-tickets-157588642873">
-              <img src="https://innersourcecommons.org/images/events/meetup-2021-07-06.jpg" alt="InnerSource &amp; Discoverability" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2021-07-06.jpg" alt="InnerSource &amp; Discoverability" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1694,7 +2361,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://www.eventbrite.com/e/innersource-commons-community-call-innersource-devops-tickets-152994650117?aff=erelexpmlt">
-              <img src="https://innersourcecommons.org/images/events/meetup-2021-06-01.jpg" alt="InnerSource &amp; DevOps" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2021-06-01.jpg" alt="InnerSource &amp; DevOps" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1714,7 +2381,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://www.eventbrite.com/e/innersource-commons-community-call-innersource-in-government-tickets-149394552127">
-              <img src="https://innersourcecommons.org/images/events/meetup-2021-05-04.jpg" alt="InnerSource in Government" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2021-05-04.jpg" alt="InnerSource in Government" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1734,7 +2401,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://www.eventbrite.com/e/innersource-commons-community-call-metrics-value-roi-tickets-147099639983">
-              <img src="https://innersourcecommons.org/images/events/meetup-2021-04-06.jpg" alt="InnerSource Metrics, Value &amp; ROI Community Call" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/meetup-2021-04-06.jpg" alt="InnerSource Metrics, Value &amp; ROI Community Call" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1753,15 +2420,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-apac-dec-2020/">
-              <img src="https://innersourcecommons.org/images/events/apac2020.jpg" alt="APAC Virtual Summit 2020" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-apac-dec-2020/">
+              <img src="https://staging.iscf.site/images/events/apac2020.jpg" alt="APAC Virtual Summit 2020" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-apac-dec-2020/" class="post-title">APAC Virtual Summit 2020</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-apac-dec-2020/" class="post-title">APAC Virtual Summit 2020</a></h3>
             <p class="card-text event-card-text">2nd and 3rd December 2020, online - event site! The 12th InnerSource Commons Summit was our first summit timed for our growing APAC community.</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-apac-dec-2020/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-apac-dec-2020/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
                 <a href="https://www.youtube.com/watch?v=TA82AFyIaUA&amp;list=PLCH-i0B0otNSA4KltJHgcQB6450VI-8pG" target="_blank" class="btn btn-secondary btn-sm mt-sm-1 mt-md-0">Watch Recording</a>
               
@@ -1773,15 +2440,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-fall-2020/">
-              <img src="https://innersourcecommons.org/images/events/america2020.jpg" alt="North American Fall Virtual Summit 2020" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-fall-2020/">
+              <img src="https://staging.iscf.site/images/events/america2020.jpg" alt="North American Fall Virtual Summit 2020" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-fall-2020/" class="post-title">North American Fall Virtual Summit 2020</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-fall-2020/" class="post-title">North American Fall Virtual Summit 2020</a></h3>
             <p class="card-text event-card-text">15th and 16th September 2020, online! The 11th InnerSource Commons Summit stayed online thanks to the success of the ISC Online Spring Summit 2020.</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-fall-2020/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-fall-2020/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
                 <a href="https://www.youtube.com/watch?v=0YzOz94cNec&amp;list=PLCH-i0B0otNQZQt_QzGR9Il_kE4C6cQRy" target="_blank" class="btn btn-secondary btn-sm mt-sm-1 mt-md-0">Watch Recording</a>
               
@@ -1793,15 +2460,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-spring-2020/">
-              <img src="https://innersourcecommons.org/images/events/cities/madrid.jpeg" alt="Spring Summit 2020" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-spring-2020/">
+              <img src="https://staging.iscf.site/images/events/cities/madrid.jpeg" alt="Spring Summit 2020" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-spring-2020/" class="post-title">Spring Summit 2020</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-spring-2020/" class="post-title">Spring Summit 2020</a></h3>
             <p class="card-text event-card-text">14th to 15th April 2020, online The 10th InnerSource Commons Summit took place in your living room!</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-spring-2020/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-spring-2020/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
                 <a href="https://www.youtube.com/watch?v=glYcE3CEELI&amp;list=PLCH-i0B0otNQeYBH5QvNRBDA3CMrS9lL9" target="_blank" class="btn btn-secondary btn-sm mt-sm-1 mt-md-0">Watch Recording</a>
               
@@ -1814,7 +2481,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://jacobgreen197.wixsite.com/mysite-1" target="_blank">
-              <img src="https://innersourcecommons.org/images/events/cities/baltimore.jpeg" alt="Fall Summit 2019" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/cities/baltimore.jpeg" alt="Fall Summit 2019" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1832,7 +2499,7 @@
         <div class="card border-0 h-100">
           <div class="h-md-45">
             <a href="https://conferences.oreilly.com/oscon/oscon-or-2019/public/schedule/full/innersource-day.html" target="_blank">
-              <img src="https://innersourcecommons.org/images/events/cities/portland.jpeg" alt="InnerSource Day @ OSCON 2019" class="card-img rounded-lg">
+              <img src="https://staging.iscf.site/images/events/cities/portland.jpeg" alt="InnerSource Day @ OSCON 2019" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
@@ -1849,15 +2516,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-spring-2019/">
-              <img src="https://innersourcecommons.org/images/events/cities/galway.jpeg" alt="Spring Summit 2019" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-spring-2019/">
+              <img src="https://staging.iscf.site/images/events/cities/galway.jpeg" alt="Spring Summit 2019" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-spring-2019/" class="post-title">Spring Summit 2019</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-spring-2019/" class="post-title">Spring Summit 2019</a></h3>
             <p class="card-text event-card-text">9th to 11th April 2019 in Galway, Ireland Follow us on Twitter and Facebook and share your experience of the Summit.</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-spring-2019/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-spring-2019/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
             </div>
           </div>
@@ -1867,15 +2534,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-fall-2018/">
-              <img src="https://innersourcecommons.org/images/events/cities/newyork.jpeg" alt="Fall Summit 2018" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-fall-2018/">
+              <img src="https://staging.iscf.site/images/events/cities/newyork.jpeg" alt="Fall Summit 2018" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-fall-2018/" class="post-title">Fall Summit 2018</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-fall-2018/" class="post-title">Fall Summit 2018</a></h3>
             <p class="card-text event-card-text">October 3-5, 2018 in Islandia, New York, USA Event That&rsquo;s an official wrap on the InnerSource Commons Fall Summit!</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-fall-2018/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-fall-2018/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
             </div>
           </div>
@@ -1885,15 +2552,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-spring-2018/">
-              <img src="https://innersourcecommons.org/images/events/cities/stuttgart.jpeg" alt="Spring Summit 2018" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-spring-2018/">
+              <img src="https://staging.iscf.site/images/events/cities/stuttgart.jpeg" alt="Spring Summit 2018" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-spring-2018/" class="post-title">Spring Summit 2018</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-spring-2018/" class="post-title">Spring Summit 2018</a></h3>
             <p class="card-text event-card-text">May 16-18 Wed-Fri near Stuttgart, Germany Pictures and Videos The ISC.S6 is a wrap! Thanks to all attendees for making this summit such an engaging and interesting one!</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-spring-2018/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-spring-2018/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
                 <a href="https://www.youtube.com/watch?v=4fgFpl-e6Vs&amp;list=PLCH-i0B0otNT6m6EUu2ZDFyEuXXI5JkUK" target="_blank" class="btn btn-secondary btn-sm mt-sm-1 mt-md-0">Watch Recording</a>
               
@@ -1905,15 +2572,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-fall-2017/">
-              <img src="https://innersourcecommons.org/images/events/cities/chicago.jpeg" alt="Fall Summit 2017" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-fall-2017/">
+              <img src="https://staging.iscf.site/images/events/cities/chicago.jpeg" alt="Fall Summit 2017" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-fall-2017/" class="post-title">Fall Summit 2017</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-fall-2017/" class="post-title">Fall Summit 2017</a></h3>
             <p class="card-text event-card-text">September 27-29 Wed-Fri in Chicago (Naperville, IL), USA Fifty nine people representing twenty two companies and institutions were present for the InnerSource Commons Fall Summit 2017 in Naperville, IL, USA.</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-fall-2017/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-fall-2017/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
             </div>
           </div>
@@ -1923,15 +2590,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-spring-2017/">
-              <img src="https://innersourcecommons.org/images/events/cities/geneva.jpeg" alt="Spring Summit 2017" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-spring-2017/">
+              <img src="https://staging.iscf.site/images/events/cities/geneva.jpeg" alt="Spring Summit 2017" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-spring-2017/" class="post-title">Spring Summit 2017</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-spring-2017/" class="post-title">Spring Summit 2017</a></h3>
             <p class="card-text event-card-text">April 18-20 in Geneva, Switzerland Join us for the next InnerSource Commons Summit in Geneva, Switzerland.</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-spring-2017/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-spring-2017/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
             </div>
           </div>
@@ -1941,15 +2608,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-fall-2016/">
-              <img src="https://innersourcecommons.org/images/events/cities/boston.jpeg" alt="Fall Summit 2016" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-fall-2016/">
+              <img src="https://staging.iscf.site/images/events/cities/boston.jpeg" alt="Fall Summit 2016" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-fall-2016/" class="post-title">Fall Summit 2016</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-fall-2016/" class="post-title">Fall Summit 2016</a></h3>
             <p class="card-text event-card-text">September 28-30 in Boston, USA Join us for the next InnerSource Commons Summit in Boston, USA.</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-fall-2016/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-fall-2016/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
             </div>
           </div>
@@ -1959,15 +2626,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/oscon-2016/">
-              <img src="https://innersourcecommons.org/images/events/cities/austin.jpeg" alt="InnerSource @ OSCON US 2016" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/oscon-2016/">
+              <img src="https://staging.iscf.site/images/events/cities/austin.jpeg" alt="InnerSource @ OSCON US 2016" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/oscon-2016/" class="post-title">InnerSource @ OSCON US 2016</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/oscon-2016/" class="post-title">InnerSource @ OSCON US 2016</a></h3>
             <p class="card-text event-card-text">May 16-19 in Austin, Texas There are several opportunities to learn more about InnerSource at OSCON US this year.</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/oscon-2016/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/oscon-2016/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
             </div>
           </div>
@@ -1977,15 +2644,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/isc-spring-2016/">
-              <img src="https://innersourcecommons.org/images/events/cities/london.jpeg" alt="Spring Summit 2016" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/isc-spring-2016/">
+              <img src="https://staging.iscf.site/images/events/cities/london.jpeg" alt="Spring Summit 2016" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/isc-spring-2016/" class="post-title">Spring Summit 2016</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/isc-spring-2016/" class="post-title">Spring Summit 2016</a></h3>
             <p class="card-text event-card-text">April 21-22 2016 in London, England Companies today already understand that Open Source is necessary.</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/isc-spring-2016/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/isc-spring-2016/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
             </div>
           </div>
@@ -1995,15 +2662,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/local-gatherings/">
-              <img src="https://innersourcecommons.org/" alt="Local Gatherings" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/local-gatherings/">
+              <img src="https://staging.iscf.site/" alt="Local Gatherings" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/local-gatherings/" class="post-title">Local Gatherings</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/local-gatherings/" class="post-title">Local Gatherings</a></h3>
             <p class="card-text event-card-text"></p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/local-gatherings/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/local-gatherings/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
             </div>
           </div>
@@ -2013,15 +2680,15 @@
       <div class="col-lg-4 col-sm-6 mb-5 event-card">
         <div class="card border-0 h-100">
           <div class="h-md-45">
-            <a href="https://innersourcecommons.org/fr/events/past-summits/">
-              <img src="https://innersourcecommons.org/" alt="Past Summits" class="card-img rounded-lg">
+            <a href="https://staging.iscf.site/fr/events/past-summits/">
+              <img src="https://staging.iscf.site/" alt="Past Summits" class="card-img rounded-lg">
             </a>
           </div>
           <div class="card-body p-0 d-flex flex-column">
-            <h3><a href="https://innersourcecommons.org/fr/events/past-summits/" class="post-title">Past Summits</a></h3>
+            <h3><a href="https://staging.iscf.site/fr/events/past-summits/" class="post-title">Past Summits</a></h3>
             <p class="card-text event-card-text">InnerSource Summit 2023 Registrations are Now Open 15th & 16th November 2023 - online Join us at the world’s leading gathering of InnerSource practitioners.</p>
             <div class="d-flex mt-auto flex-md-row flex-sm-column">
-              <a href="https://innersourcecommons.org/fr/events/past-summits/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
+              <a href="https://staging.iscf.site/fr/events/past-summits/" class="btn btn-primary btn-sm mr-md-1">Open Event</a>
               
             </div>
           </div>
@@ -2039,32 +2706,15 @@
         
         <ul class="list-unstyled footer-list">
           
-          <li><b class="mt-2 d-block"><a href="https://innersourcecommons.org/fr/learn">Apprendre</a></b></li>
+          <li><b class="mt-2 d-block"><a href="https://staging.iscf.site/learn">Apprentissage</a></b></li>
           
-          <li><a href="https://innersourcecommons.org/fr/learn/books">Livres</a></li>
+          <li><a href="https://staging.iscf.site/learn/books">Livres</a></li>
           
-          <li><a href="https://innersourcecommons.org/fr/learn/learning-path">Parcours d&#39;apprentissage</a></li>
+          <li><a href="https://staging.iscf.site/learn/learning-path">Parcours d&#39;Apprentissage</a></li>
           
-          <li><a href="https://innersourcecommons.org/fr/learn/patterns">Patterns</a></li>
+          <li><a href="https://staging.iscf.site/learn/patterns">Modèles</a></li>
           
-          <li><a href="https://innersourcecommons.org/fr/learn/research">Recherche</a></li>
-          
-        </ul>
-        
-      </div>
-      <div class="col-md-3 col-sm-6 mb-5">
-        
-        <ul class="list-unstyled footer-list">
-          
-          <li><b class="mt-2 d-block"><a href="https://innersourcecommons.org/fr/events/community-calls">Évènements</a></b></li>
-          
-          <li><b class="mt-2 d-block"><a href="https://innersourcecommons.org/fr/community">Communauté</a></b></li>
-          
-          <li><b class="mt-2 d-block"><a href="https://innersourcecommons.org/fr/stories">Histoires</a></b></li>
-          
-          <li><a href="https://innersourcecommons.org/fr/community/services">Annuaire de Services</a></li>
-          
-          <li><a href="https://innersourcecommons.org/fr/about/announcements">Annonces</a></li>
+          <li><a href="https://staging.iscf.site/learn/research">Recherche</a></li>
           
         </ul>
         
@@ -2073,25 +2723,48 @@
         
         <ul class="list-unstyled footer-list">
           
-          <li><b class="mt-2 d-block"><a href="https://innersourcecommons.org/fr/about">À Propos</a></b></li>
+          <li><b class="mt-2 d-block"><a href="https://staging.iscf.site/events/community-calls">Événements</a></b></li>
           
-          <li><a href="https://innersourcecommons.org/fr/about/board">Conseil d&#39;Administration et de Gouvernance</a></li>
+          <li><a href="https://staging.iscf.site/events/isc-2024">Sommet 2024</a></li>
           
-          <li><a href="https://innersourcecommons.org/fr/about/members">Membres</a></li>
+          <li><a href="https://gatherings.innersourcecommons.org/">Rassemblements Locaux</a></li>
           
-          <li><a href="https://innersourcecommons.org/fr/about/sponsors">Sponsors</a></li>
+          <li><a href="https://staging.iscf.site/events/past-summits">Sommets Précédents</a></li>
           
-          <li><a href="https://innersourcecommons.org/fr/about/codeofconduct">Code de Conduite</a></li>
+          <li><b class="mt-2 d-block"><a href="https://staging.iscf.site/community">Communauté</a></b></li>
           
-          <li><a href="https://innersourcecommons.org/fr/about/contact">Nous contacter</a></li>
+          <li><b class="mt-2 d-block"><a href="https://staging.iscf.site/stories">Histoires</a></b></li>
           
-          <li><a href="https://innersourcecommons.org/fr/about/privacy">Politique de confidentialité</a></li>
+          <li><a href="https://staging.iscf.site/community/services">Répertoire des Services</a></li>
+          
+          <li><a href="https://staging.iscf.site/about/announcements">Annonces</a></li>
           
         </ul>
         
       </div>
       <div class="col-md-3 col-sm-6 mb-5">
-        <a class="d-block mb-3" href='https://innersourcecommons.org/https://innersourcecommons.org/fr'><img width="200px"   class="img-fluid" src="https://innersourcecommons.org/images/logo.png" alt="InnerSource Commons"></a>
+        
+        <ul class="list-unstyled footer-list">
+          
+          <li><b class="mt-2 d-block"><a href="https://staging.iscf.site/about">À propos</a></b></li>
+          
+          <li><a href="https://staging.iscf.site/about/board">Conseil &amp; Gouvernance</a></li>
+          
+          <li><a href="https://staging.iscf.site/about/members">Membres</a></li>
+          
+          <li><a href="https://staging.iscf.site/about/sponsors">Sponsors</a></li>
+          
+          <li><a href="https://staging.iscf.site/about/codeofconduct">Code de Conduite</a></li>
+          
+          <li><a href="https://staging.iscf.site/about/contact">Contactez-nous</a></li>
+          
+          <li><a href="https://staging.iscf.site/about/privacy">Politique de Confidentialité</a></li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-3 col-sm-6 mb-5">
+        <a class="d-block mb-3" href='https://staging.iscf.site/https://staging.iscf.site/fr'><img width="200px"   class="img-fluid" src="https://staging.iscf.site/images/logo.png" alt="InnerSource Commons"></a>
         <p class="mb-4">Le site est sous licence CC-BY-SA, sauf indication contraire.</p>
         
         
@@ -2118,20 +2791,20 @@
 
 <!-- JS Plugins -->
 
-<script src="https://innersourcecommons.org/plugins/jQuery/jquery.min.js"></script>
+<script src="https://staging.iscf.site/plugins/jQuery/jquery.min.js"></script>
 
-<script src="https://innersourcecommons.org/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://staging.iscf.site/plugins/bootstrap/bootstrap.min.js"></script>
 
-<script src="https://innersourcecommons.org/plugins/slick/slick.min.js"></script>
+<script src="https://staging.iscf.site/plugins/slick/slick.min.js"></script>
 
-<script src="https://innersourcecommons.org/plugins/youmax/youmax.js"></script>
+<script src="https://staging.iscf.site/plugins/youmax/youmax.js"></script>
 
-<script src="https://innersourcecommons.org/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="https://staging.iscf.site/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
 
 
 <!-- Main Script -->
 
-<script src="https://innersourcecommons.org/js/script.min.js"></script>
+<script src="https://staging.iscf.site/js/script.min.js"></script>
 
 
 
