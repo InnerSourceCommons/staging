@@ -15,18 +15,22 @@ main:
     URL: about/members
     parent: about
     weight: 4
+  - name: "InnerSourcers Map"
+    URL: about/map
+    parent: about
+    weight: 5
   - name: "スポンサー"
     URL: about/sponsors
     parent: about
-    weight: 5
-  - name: "InnerSource ストーリー"
+    weight: 6
+  - name: "InnerSource の事例"
     URL: stories
     parent: about
-    weight: 6
+    weight: 7
   - name: GitHub
     URL: https://github.com/InnerSourceCommons
     parent: about
-    weight: 7
+    weight: 8
   - name: "お問い合わせ"
     URL: about/contact
     parent: about
@@ -76,7 +80,7 @@ main:
     URL: learn
     weight: 1
     identifier: learning
-  - name: "学習"
+  - name: "Learning"
     URL: learn/
     parent: learning
     weight: 1
@@ -88,7 +92,7 @@ main:
     URL: https://innersourcecommons.org/learn/books/innersource-patterns/
     parent: learning
     weight: 3
-  - name: "InnerSourceプロジェクトの管理"
+  - name: "InnerSourceプロジェクトの管理について"
     URL: https://innersourcecommons.org/learn/books/managing-innersource-projects/
     parent: learning
     weight: 4
@@ -100,15 +104,15 @@ main:
     URL: learn/books
     parent: learning
     weight: 6
-  - name: "InnerSourceを始めよう"
+  - name: "InnerSource入門"
     URL: https://innersourcecommons.org/learn/books/getting-started-with-innersource/
     parent: learning
     weight: 7
-  - name: "InnerSourceチェックリストの理解"
+  - name: "Understanding the InnerSource Checklist"
     URL: https://innersourcecommons.org/learn/books/understanding-the-innersource-checklist/
     parent: learning
     weight: 8
-  - name: "InnerSourceの原則と事例研究の採用"
+  - name: "Adopting InnerSource"
     URL: https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/
     parent: learning
     weight: 9
@@ -123,11 +127,11 @@ main:
     parent: community
     weight: 1
     
-  - name: "InnerSource Gatherings - ローカルチャプター"
+  - name: "InnerSource Gatherings - ローカルコミュニティ"
     URL: https://gatherings.innersourcecommons.org/
     parent: community
     weight: 3
-  - name: "InnerSourceサミット2024"
+  - name: "InnerSource Summit 2024"
     URL: events/isc-2024
     parent: community
     weight: 4
@@ -139,10 +143,6 @@ main:
     URL: community/services
     parent: community
     weight: 10
-  - name: "InnerSourcersマップ"
-    URL: about/map
-    parent: community
-    weight: 11
 
 # News
   - name: Blog & News

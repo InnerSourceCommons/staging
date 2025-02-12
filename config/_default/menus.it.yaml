@@ -15,18 +15,22 @@ main:
     URL: about/members
     parent: about
     weight: 4
+  - name: "Mappa degli InnerSourcers"
+    URL: about/map
+    parent: about
+    weight: 5
   - name: "Sponsor"
     URL: about/sponsors
     parent: about
-    weight: 5
+    weight: 6
   - name: "Storie InnerSource"
     URL: stories
     parent: about
-    weight: 6
+    weight: 7
   - name: GitHub
     URL: https://github.com/InnerSourceCommons
     parent: about
-    weight: 7
+    weight: 8
   - name: "Contattaci"
     URL: about/contact
     parent: about
@@ -139,10 +143,6 @@ main:
     URL: community/services
     parent: community
     weight: 10
-  - name: "Mappa degli InnerSourcers"
-    URL: about/map
-    parent: community
-    weight: 11
 
 # News
   - name: Blog & News
